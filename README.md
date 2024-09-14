@@ -8,3 +8,9 @@
 ### 二、Client功能   
 1、定时发送心跳  
 2、读取服务器发来的广播或者单波数据  
+
+
+### 如何使用使用？
+在有go环境的容器或者VM中运行按照提示运行就行   
+1、run go udp-server.go   
+2、run go udp-client.go  
