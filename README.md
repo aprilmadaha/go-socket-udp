@@ -1,4 +1,5 @@
-## 使用Go实现UDP的Socket双向交互，并实现keeplive心跳检测（demo）
+## 使用Go实现UDP的Socket单、双向交互，并实现Keeplive心跳检测（demo）
+
 ### 一、Server功能
 1、客户端发送心跳就刷新客户端的时间   
 2、定时清理会话超时的连接   
