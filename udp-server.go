@@ -73,7 +73,7 @@ func allSeesion(pc net.PacketConn) { //广播所有会话
 	for {
 		if len(sessions) > 0 {
 			for _, num := range sessions {
-				_, err := pc.WriteTo([]byte("大家还好吗？\n"), num.ClientAddr)
+				_, err := pc.WriteTo([]byte("大家还好吗？\n"), num.ClientAddr)	//坑：这里要加上\n不然客户端收不到
 				if err != nil {
 					log.Println(err)
 				}
